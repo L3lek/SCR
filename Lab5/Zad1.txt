@@ -1,0 +1,6 @@
+Napisz program, który:
+(a) utworzy potok (funkcją pipe),
+(b) uruchomi podproces, z którym proces nadrzędny będzie komunikował się przez ten potok (funkcja fork),
+(c) proces nadrzędny otworzy plik tekstowy podany w argumencie wywołania programu, a następnie wyśle procesowi potomnemu zawartość tego pliku przez potok,
+(d) proces potomny odczyta dane z potoku, a następnie wyświetli je na standardowym wyjściu dodając znacznik @@@@ na początku i #### na końcu każdej odebranej paczki danych. Wielkość paczek jest dowolna.
+

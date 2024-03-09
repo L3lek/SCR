@@ -1,0 +1,10 @@
+Zmodyfikuj program z punktu 1 tak aby:
+(a) proces nadrzędny zamiast pliku tekstowego przesyłał plik graficzny (JPEG lub PNG),
+(b) proces potomny zamiast odczytywać bezpośrednio z potoku wykonał przekierowanie zawartości potoku na standardowe wejście (funkcje close i dup), a następnie uruchomił program (jedna z funkcji exec*) wyświetlający obrazek pobrany z tego wejścia (deskryptora 0).
+Uruchom program i sprawdź, czy proces potomny zacznie wyświetlać obrazek od razu, czy dopiero po zamknięciu potoku przez proces nadrzędny.
+Jako program wyświetlający obrazki można zastosować między innymi programy:
+display z pakietu Image Magick (display -update 1)
+qiv (qiv --watch)
+feh (feh --reload 1)
+eog/eom
+
